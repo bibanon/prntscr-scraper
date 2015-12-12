@@ -16,14 +16,18 @@ As of this writing, there are 566574270 images on Prntscr. Here's a rough estima
 
 ## Usage
 
-1. The first step is to initialize the SQLite database, `prntscr.db`.
-  * If the database already exists, you will need to move or delete the existing one before creating a new one.
+1. The first step is to initialize the SQLite database, `prntscr.db`. If the database already exists, you will need to move or delete the existing one before creating a new one.
+
         python3 0-create-db.py
-2. The next step is to scrape the image urls.
-  * If you need to pause and continue later, press Ctrl-C to stop and save changes.
+
+2. The next step is to scrape the image urls. If you need to pause and continue later, press Ctrl-C to stop and save changes.
+
         python3 1-get-urls.py 566574270
+
 3. If you want to start at a certain index, instead of `0`, put in two arguments (start, stop):
+
         python3 1-get-urls.py 1679616 566574270
+
 3. Once all URLs have been scraped, the results will be in the `prntscr.db` SQLite database.
 
 You can also edit `settings.py` to change delays and other settings.
