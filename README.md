@@ -29,7 +29,7 @@ Install them from PyPi using:
 
 ```
 sudo apt-get install python3-pip
-sudo pip3 install requests sqlite3 beautifulsoup4 dataset
+sudo pip3 install requests beautifulsoup4 dataset
 ```
 
 ## Usage
