@@ -14,6 +14,24 @@ As of this writing, there are 566574270 images on Prntscr. Here's a rough estima
 * `566574270/60/60/60/24` = 1 second delay, ~100-120 days
 * `566574270/60/60/60/24/10` = 100 millisecond delay, ~10-12 days
 
+## Dependencies
+
+This script requires Python 3, and uses the following libraries:
+
+* Web Scraping
+  * `requests` - Elegant HTTP requests library.
+  * `beautifulsoup4` - BeautifulSoup 4, for easy HTML parsing.
+* Database Storage
+  * `sqlite3` - SQL database.
+  * `dataset` - Easy SQL Wrapper for lazy programmers.
+
+Install them from PyPi using:
+
+```
+sudo apt-get install python3-pip
+sudo pip3 install requests sqlite3 beautifulsoup4 dataset
+```
+
 ## Usage
 
 1. The first step is to initialize the SQLite database, `prntscr.db`. If the database already exists, you will need to move or delete the existing one before creating a new one.
